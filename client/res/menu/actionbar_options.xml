@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/enable_swipe"
+          android:title="Навигация свайпами"
+          android:checkable="true"
+          android:checked="false"/>
+    <item android:id="@+id/send_message"
+          android:title="Отправить багрепорт"/>
+    <item android:id="@+id/to_board"
+          android:title="Выбрать борду"/>
+    <item android:id="@+id/threads_list"
+          android:title="Список тредов"/>
+    <item android:id="@+id/to_thread"
+          android:title="Открыть тред в браузере"/>
+</menu>

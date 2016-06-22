@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_pic_share"
+          android:icon="@drawable/ic_share_white_24dp"
+          android:title="Поделиться"
+          android:showAsAction="always"/>
+    <item android:id="@+id/action_pic_download"
+          android:icon="@drawable/ic_save_white_24dp"
+          android:title="Сохранить"
+          android:showAsAction="always"/>
+    <item android:id="@+id/action_pic_more"
+          android:icon="@drawable/ic_more_vert_white_24dp"
+          android:title="Действия"
+          android:showAsAction="always"/>
+</menu>

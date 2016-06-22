@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Двач Пикчи</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .contnew{
+                text-align: left;
+                display:flex;
+                flex-wrap: wrap;
+                width:100%;
+            }
+            .picnew{
+                margin: 1px 1px 2px 1px;
+                flex-grow:1;
+                width:30vw;
+                height:30vw;
+                border-width: 1px;
+                border-color: #ff6600;
+                background-size: cover;
+                background-position: center center;
+                background-repeat: no-repeat;
+                position: relative;
+            }
+            .infonew{
+                font-family: monospace;
+                font-size: 8pt;
+                padding-left:2px;
+                opacity: 0.5;
+                background-color:black;
+                color:white;
+            }
+            .extnew{
+                position: absolute;
+                right: 2px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <% if(av != cv){ %>
+                <div class="upgrade">
+                    <p><b>Доступно обновление!</b></p>
+                    <p>У вас стоит версия: <b><%= cv %></b>, актуальная версия: <b><%= av %></b></p>
+                    <p>Так как приложение забанили в гуглплее за фап-контент, apk придется устанавливать вручную.</p>
+                    <p><a href="https://sosach.herokuapp.com">sosach.herokuapp.com</a></p>
+                    <p><i>ссылка может не открыться через приложение, но в новой версии это исправлено, лол.</i></p>
+                </div>
+            <%} %>
+            <p class="title"><%= thread.title %></p>
+            <p class="updated">(обновлено <%= thread.upd %>)</p>
+            <p class="post"><%- thread.post %></p>
+            <div class="contnew">
+                <%thread.pics.forEach(function(p){%>
+                    <a class="picnew" href="<%= p.img %>" target="_blank" style="background-image:url(<%= p.thumb %>); border-style:<% if(p.ext=="webm"){%>dashed<% }else if(p.ext=="gif") { %>dotted<%} else {%>solid<%} %>"><div class="infonew"><%= p.w %>x<%= p.h %> <%= p.size %>КБ<span class="extnew"><%= p.ext %></span></div></a>
+                <%});%>
+            </div>
+        </div>
+        <script>
+            try{
+                Android.setThread('https://2ch.hk/<%= borda %>/res/<%= thread.id %>.html');
+            }catch(e){
+                console.log("...");
+            }
+        </script>
+    </body>
+</html>

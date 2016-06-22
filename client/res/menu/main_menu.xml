@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_change_board"
+          android:title="Выбрать борду"
+          android:icon="@drawable/ic_directions_run_white_24dp"
+          android:showAsAction="always"/>
+    <item android:id="@+id/action_refresh_all"
+          android:icon="@drawable/ic_refresh_white_24dp"
+          android:title="Обновить всё"
+          android:showAsAction="ifRoom"/>
+    <item android:id="@+id/action_more"
+          android:icon="@drawable/ic_more_vert_white_24dp"
+          android:title="Опции"
+          android:showAsAction="always"/>
+</menu>

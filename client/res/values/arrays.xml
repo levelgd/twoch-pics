@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="boards">
+        <item>/b/</item>
+        <item>/po/</item>
+        <item>/vg/</item>
+        <item>/soc/</item>
+        <item>/media/</item>
+        <item>/spc/</item>
+        <item>/wm/</item>
+        <item>/pa/</item>
+        <item>/p/</item>
+        <item>/c/</item>
+        <item>/mlp/</item>
+        <item>/a/</item>
+        <item>/ma/</item>
+        <item>/h/</item>
+        <item>/ho/</item>
+        <item>/gg/</item>
+        <item>/e/</item>
+        <item>/fag/</item>
+        <item>/rf/</item>
+    </string-array>
+    <string-array name="boards_desc">
+        <item>бред</item>
+        <item>политика</item>
+        <item>video games general</item>
+        <item>общение</item>
+        <item>анимация</item>
+        <item>космос и астрономия</item>
+        <item>военная техника</item>
+        <item>живопись</item>
+        <item>фотография</item>
+        <item>комиксы и мультфильмы</item>
+        <item>My Little Pony</item>
+        <item>аниме</item>
+        <item>манга</item>
+        <item>хентай</item>
+        <item>прочий хентай</item>
+        <item>хорошие девушки</item>
+        <item>extreme pron</item>
+        <item>фагготрия</item>
+        <item>убежище</item>
+    </string-array>
+</resources>

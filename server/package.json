@@ -1,0 +1,19 @@
+{
+  "name": "2ch-kartinochki-viewer",
+  "version": "0.0.1",
+  "dependencies":{
+    "express": "~4.13.x",
+    "ejs":"~2.3.x",
+    "request":"2.67.x",
+    "queue":"3.1.x"
+  },
+  "author": {
+    "name": "levelgd",
+    "email": "levelgd@gmail.com"
+  },
+  "private":"true",
+  "main":"main.js",
+  "scripts": {
+    "start": "node main.js"
+  }
+}

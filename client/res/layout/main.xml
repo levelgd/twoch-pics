@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent">
+    <WebView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/webView"/>
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/buttonsSwipeLayout">
+
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonLeftSwipe"
+                android:layout_gravity="left"
+                android:src="@drawable/ic_navigate_before_black_24dp"
+                android:background="@android:color/transparent"
+                android:onClick="prevThread"/>
+
+        <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonRightSwipe"
+                android:layout_gravity="right"
+                android:src="@drawable/ic_navigate_next_black_24dp"
+                android:background="@android:color/transparent"
+                android:onClick="nextThread"/>
+    </FrameLayout>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewScroll"
+            android:layout_gravity="center_horizontal|bottom"
+            android:textSize="48sp"
+            android:textStyle="bold"/>
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            android:id="@+id/frameLayoutLoading">
+
+        <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar" android:layout_gravity="center"/>
+    </FrameLayout>
+
+</FrameLayout>
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:weightSum="1">
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Обратная связь"
+            android:id="@+id/textViewTitleSend"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:padding="4dp"
+            android:textColor="#ff6600"/>
+
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#ff6600"/>
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/editTextMessage"
+            android:hint="сообщение разработчику Пикч"
+            android:gravity="top"
+            android:minLines="5"
+            android:padding="8dp"/>
+
+</LinearLayout>
